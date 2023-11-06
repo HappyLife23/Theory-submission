@@ -1,0 +1,173 @@
+Teorihandbok HTML, CSS, JavaScript & Webbteknik
+
+Innehållsförteckning
+
+
+Vad är HTML och CSS? Vad används dessa till och vad är skillnaden mellan dem?	3
+Vad finns det för layout-tekniker i CSS? Ange både moderna och föregångare. Vad skiljer dem åt, kan de kombineras?	4
+Vad är JavaScript? Vad kan det användas till inom webb-frontend?	5
+Vad är XML? Vilka samband finns det mellan XML & JSON samt mellan XML och HTML?	7
+Vad menas med tillgänglighet när det kommer till digitala medier och mer specifikt webbplatser och webbtjänster?	8
+Vad är metadata i allmänhet? Och vad menas med metadata för exempelvis Google eller sociala medier inom HTML?	9
+Hur är internet och mer specifikt webben uppbyggd rent teknisk? En övergripande förklaring räcker bra.	10
+Var är HTTP-protokollet och hur fungerar det i grova drag?	11
+Vad menas med Frontend och Backend och hur hänger det samman med webben och HTTP-protokollet?	12
+Vad är ett API och hur hänger det samman med Backend, Frontend och HTTP?	13
+Vad finns det som kan påverka prestanda på webbplatser?	14
+Vad innebär responsiv design och mobilanpassning av webbplatser?	15
+Vad är versionshantering och GIT? Vad är fördelarna med att använda det?	16
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+-- Vad är HTML och CSS? Vad används dessa till och vad är skillnaden mellan dem?
+
+HTML står för HyperText Markup Language. HTML utgör grunden för en webbsida och används för att strukturera och organisera innehållet på en webbsida. Med HTML kan vi definiera och beskriva olika delar av en webbsida, såsom bilder, rubriker, text, länkar och andra element.
+ 
+CSS står för Cascading Style Sheets och används för att styra utseendet och layouten på en webbsida. Med hjälp av CSS kan vi ändra färger, typsnittens storlek, placeringen av olika element och andra visuella aspekter.
+ 
+Skillnaden mellan HTML och CSS är att HTML främst fokuserar på att strukturera och organisera innehållet på en webbsida, såsom bilder, texter och rubriker. Vi använder olika HTML-element beroende på syftet, till exempel använder vi `<h1>`-elementet för att skapa en rubrik på vår webbplats och `<a>`-taggen för att skapa länkar till andra webbplatser.
+ 
+CSS skapar det utseende vi vill ha på vår webbplats. Om vi till exempel vill ändra bakgrundsfärgen på webbplatsen måste vi först välja det element som vi vill ändra och sedan använda en egenskap (property) och tilldela den ett värde. Till exempel kan vi gå till vår separat skapade CSS-fil (det går även att göra detta i HTML-filen, men det är lättare att skapa en separat fil både för enskilda utvecklare och för att förstå koden) och skriva `body { background-color: black; }`. På detta sätt ändrar vi bakgrundsfärgen på vår webbplats.
+ 
+Ett enkelt exempel kan vara att tänka på HTML som byggstenarna i ett hus, medan CSS styr utseendet på själva huset, till exempel storlek, färg på taket och rummen inuti.
+-------------------------------------------------------------------------------------------------------------------------------
+-- Vad finns det för layout-tekniker i CSS? Ange både moderna och föregångare. Vad skiljer dem åt, kan de kombineras?
+
+Det finns flera olika layout-tekniker inom CSS både äldre och nyare versioner. Teknikerna styr över placeringen av html-element på en webbplats. 
+De layout-tekniker som jag känner till så här långt in i utbildningen är Flexbox, display (flex, inline, block, grid), position (absolute, relative) som är moderna layout-tekniker och det går att kombinera de med varandra för att få en mer komplex och samtidigt en responsiv webbplats. 
+Flexbox är relativ enkelt att arbeta med och om man har koll på Flexbox reglerna så det är inte så svårt att förstå som till exempel kan du sätta display:flex; på container eller föräldern och styra elementens placering och storlek inom en container. 
+Grid layouten är min personliga favorit, det är en modern layout-teknik och väldigt enkelt att förstå och arbeta med. Du skapar en container och lägger du allt innehåll som header, main, sidebar och footer i containern och kör du display-grid på container i css-filen och jobbar du därefter med din webbplats. 
+Det finns några layout-tekniker som är äldre, de används fortfarande med rekommenderas att inte använda för att de kan stöka till när det kommer till responsivitet. Dessa tekniker är float, CSS-Tabeller (rekommenderas inte men kan användas vid specifika fall för att skapa tabellbaserade layouter), Multiple-Columns (används för att skapa flera kolumner i en behållare för layout med text).
+
+-------------------------------------------------------------------------------------------------------------------------------
+-- Vad är JavaScript? Vad kan det användas till inom webb-frontend?
+
+JavaScript är ett av de mest populära och använda programmeringsspråken som används främst i frontend-utveckling för att skapa en interaktiv och dynamisk hemsida. Detta programmeringsspråk utvecklade av Brendan Eich och lanserades år 1995. 
+JavaScript är ett högnivåspråk, vilket betyder att betyder att det är lätt att läsa och skriva. Det är ett tolkat språk som innebär att det inte behöver att kompileras innan det kan köras och detta gör att vi kan skapa webbsidor som är snabba och lätta att uppdatera. 
+
+JavaScript är ett kraftfull verktyg som kan användas att skapa olika dynamiska webbsidor som:
+
+Interaktiva element, som knappar, formulär och menyer 
+
+Klientbaserad: detta betyder att JavaScript körs direkt på klientens dator, med andra ord utvecklaren kan skapa interaktivitet utan att behöva skicka data till en server och vänta på svar.
+
+JavaScript stöder olika datatyper som stänger, nummer, boolean och mycket mer och med dessa variabler eller datatyper kan utvecklaren lagar och hantera data.
+
+Funktioner spelar en viktig roll i JavaScript. Med hjälp av funktioner kan utvecklaren lagar data och upprepa variabler flera gånger och dessa data kan köras bara inom den skapade funktionen för att de är lagrade lokalt eller ’block scope’ och till skillnad från globala variabler som är tillgängliga över hela programmet.
+
+DOM-manipulation: i JavaScript kan utvecklaren manipulera DOM (document Object Model) och ändra struktur och innehållet på en webbsida exempelvis ändra text, bilder och element.
+
+Animationer och visuella effekter
+Det finns många JavaScript bibliotek och ramverk som kan förenkla utvecklarens arbete och några populära är jQuery, React, Angular och Vue.js
+
+Användargränssnitt för webbappar
+
+Realtidskommunikation 
+
+-------------------------------------------------------------------------------------------------------------------------------			
+-- Vad är XML? Vilka samband finns det mellan XML & JSON samt mellan XML och HTML?
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+--Vad menas med tillgänglighet när det kommer till digitala medier och mer specifikt webbplatser och webbtjänster?
+
+När man pratar om tillgänglighet i digitala medier handlar om att man ska nå alla typer av publik, de som är hörselskadade, synskadade eller andra typer av hinder eller begränsningar. På så sätt skapar man en mer användarvänlig webbplats som är mer rättvist och når en bredare publik. Bortse från att det handlar om rättvisan så finns det även lagar och föreskrifter i många länder som kräver att offentliga webbplatser ska vara tillgängliga. 
+
+Några typer av tillgänglighet:
+
+Hörselförnimmelser: att man kan erbjuda alternativ till de som är hörselskadade och det kan vara undertext eller texttranskriptioner.
+
+Motoriska tillgänglighet: att det ska finnas alternativa hjälpmedel i stället för traditionella mus eller tangentbord och det kan vara röststyrning.
+
+Responsiv design: att skapa en webbplats som är responsiv och att användarna har möjlighet att besöka webbplatsen på olika sätt och att de inte är begränsat.
+
+Kognitiv tillgänglighet: detta betyder att webbplatsen ska ha en enkel och tydlig struktur för användare med kognitiva funktionshinder. Kravet är att det ska innehålla enkelt och tydlig språk och tydlig struktur och lätt att navigera runt.  
+
+-------------------------------------------------------------------------------------------------------------------------------
+-- Vad är metadata i allmänhet? Och vad menas med metadata för exempelvis Google eller sociala medier inom HTML?
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+-- Hur är internet och mer specifikt webben uppbyggd rent teknisk? En övergripande förklaring räcker bra.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+--Var är HTTP-protokollet och hur fungerar det i grova drag?
+
+-------------------------------------------------------------------------------------------------------------------------------
+-- Vad menas med Frontend och Backend och hur hänger det samman med webben och HTTP-protokollet?
+
+Frontend är den delen av webbplatsen som användarna integrera med direkt. Detta innebär att de kan se alla visuella element som knappar, layouten på webbplatsen, användargränssnittet och den grafiska gränsnittet.
+
+Frontend-utvecklare använder tekniker som HTML(Hypertext Markup Language) för att strukturera innehållet på webbplatsen och CSS (Cascading Style Sheets) som hanterar utseendet och JavaScript för att göra sidan dynamisk och interaktiv. 
+Webbläsaren är den plattform som körs på användarens enhet och som tolkar frontend-koden. HTTP-protokollet används för att hämta frontend -resurser från server till webbläsaren.
+
+Backend är den delen som är osynlig för användaren och det är här all logik sker. Backend-tekniker inkluderar PHP, Python, Ruby, Java och ramverk som Node.js, Ruby on Rails och Django.
+Backend inkludera servern, databaser, applikationens logik och alla processer som utförs på servern för att svara på användarens begäran. 
+
+HTTP-protokollet används för att hantera kommunikationen mellan frontend och backend. Frontend skickar HTTP-förfrågningar till backend för att hämta eller skicka data. 
+
+-------------------------------------------------------------------------------------------------------------------------------
+-- Vad är ett API och hur hänger det samman med Backend, Frontend och HTTP?
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+-- Vad finns det som kan påverka prestanda på webbplatser?
+
+Många faktorer kan påverka prestandan på webbplatsen.
+
+Bildkomprimering: stora och optimerade bilder påverkar prestandan vilket gör att vår webbplats laddas långsammare. 
+
+Responsiv design: en webbplats som är anpassad för mobilenheten presterar bättre och har snabbare laddningstider.
+
+Optimerad kod: optimerad kod minskar onödig belastning och sidan laddas snabbare. 
+
+Validering och felhantering: fel och problem som hanteras kan förbättra prestandan och att användarna kan uppleva ett felfritt upplevelse.
+
+Minifera CSS och JS: bra att förkorta koden så mycket det går, t.ex om det går att kombinera eller skriva samma kodrader tillsammans så ska man göra för att slippa ha en tung html eller css-fil vilket i sin tur minskar laddningstiden för användare.
+
+Serverprestanda: webbhotelletskvalite och servarns kapacitet spelar en stor roll. En överbelastad server minkar prestandan på en webbplats. 
+
+SSL-certifikat: att använda HTTPS och ett korrekt konfigurerat SSL-certifikat förbättrar webbplatsens säkerhet och prestanda. 
+
+-------------------------------------------------------------------------------------------------------------------------------
+-- Vad innebär responsiv design och mobilanpassning av webbplatser?
+
+Det är två tekniker som är väldigt viktigt att ha på sin webbplats då kan användarna se webbplatsen på olika skärmstorlekar. Dessa tekniker ökar webbplatsens användning speciellt nu när alla har en smart telefon. 
+
+Responsiv design syftar på vilken metod ska användas i CSS för att skapa en responsiv-layout. Då när webbsidan går från en större till en mindre skärm ska användarna kunna se det viktiga innehållet på hemsidan. 
+
+Mobilanpassning är en specifik strategi som är anpassad bara tyllen mobila-enheten. Det kan innebära att skapa som till exempel en hamburgermeny så användaren ska inte behöva se hela navigationsmenyn hela tiden, dessutom hamburgermeny tar mindre plats. 
+
+Några viktiga punkter inom responsiv design och mobilanpassning:
+
+Textstorlek: storlek på texten när man besöker från en mobil ska vara anpassad, varken för stor eller för liten. 
+
+Optimering av bilder: viktigt att optimera bilder så att de laddas snabbare och då ökas användarupplevelsen och får en positiv känsla. 
+
+Touch-interaktioner: använda hyfsad stora och tydliga knappar så att användarna har lätt att hitta och trycka. 
+
+Laddningstider: genom att komprimera resurser minskas laddningstider.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+-- Vad är versionshantering och GIT? Vad är fördelarna med att använda det?
+
+Git utvecklades av ingen mindre än Linus Torvalds även skaparen av Linux som föddes i Finland. 
+
+Vad är git då? Git är en versionhanteringssystem och ett öppen källkod. De finns andra liknande versionhanteringssystem som Subversion, Mecurial, Bazzar och några till men git är absolut mest använda versionhanteringssystem och nästan 90% av utvecklarna använder git på daglig basis världen runt. Gigantiska företag som Netflix, Microsoft, Amazon, Walmart, Appel använder sig av git. 
+
+
+Några fördelar med git:
+
+Först och främst att alla kan använda utan att behöva betala om man inte vill bli pluskund men den gratisversionen räcker.
+
+Samarbete och delning: flera kan arbeta samtidigt på ett projekt och sammanföra resultatet smidigt. 
+
+Historik och sårbarhet: fungerar som en tidsmaskin, det går att gå tillbaks i tiden och kolla vad som har förändrats och hoppa fram i tiden, fantastiskt. 
+
+Branching och merging: git möjliggör att skapa olika brancher och arbeta på projektet på sidan om utan att behöva arbeta på huvudprjektet och med hjälp av merging sammanföra de till varandra på ett smidigt sätt. 
+
+Git minskar risken att vi förlorar ett projekt som vi har arbetat i många timmar och det krävs ganska mycket för att ta bort med misstag ett projekt vilket är git väldigt bra på att ställa frågor och förhindrar oss. 
